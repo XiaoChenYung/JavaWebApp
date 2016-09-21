@@ -12,9 +12,12 @@
 		923F26811D9278C900B27D8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923F267F1D9278C900B27D8B /* Main.storyboard */; };
 		923F26831D9278C900B27D8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923F26821D9278C900B27D8B /* Assets.xcassets */; };
 		923F26861D9278C900B27D8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923F26841D9278C900B27D8B /* LaunchScreen.storyboard */; };
+		FAF23FDFFD7EAF704B96E74E /* Pods_JavaWebApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12FD701A46B7B79848A47BD0 /* Pods_JavaWebApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12FD701A46B7B79848A47BD0 /* Pods_JavaWebApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JavaWebApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37A9B32E8DB3E66DBE08DDE6 /* Pods-JavaWebApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaWebApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JavaWebApp/Pods-JavaWebApp.debug.xcconfig"; sourceTree = "<group>"; };
 		923F26781D9278C900B27D8B /* JavaWebApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JavaWebApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		923F267B1D9278C900B27D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		923F267D1D9278C900B27D8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		923F26821D9278C900B27D8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		923F26851D9278C900B27D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		923F26871D9278C900B27D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F0C5B0B2F6698B277D9377F /* Pods-JavaWebApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaWebApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JavaWebApp/Pods-JavaWebApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF23FDFFD7EAF704B96E74E /* Pods_JavaWebApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78350ACA5253FBCCA20139F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37A9B32E8DB3E66DBE08DDE6 /* Pods-JavaWebApp.debug.xcconfig */,
+				9F0C5B0B2F6698B277D9377F /* Pods-JavaWebApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		923F266F1D9278C900B27D8B = {
 			isa = PBXGroup;
 			children = (
 				923F267A1D9278C900B27D8B /* JavaWebApp */,
 				923F26791D9278C900B27D8B /* Products */,
+				78350ACA5253FBCCA20139F8 /* Pods */,
+				FBBE383EBFC67F6BFD062DA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = JavaWebApp;
 			sourceTree = "<group>";
 		};
+		FBBE383EBFC67F6BFD062DA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12FD701A46B7B79848A47BD0 /* Pods_JavaWebApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 923F268A1D9278C900B27D8B /* Build configuration list for PBXNativeTarget "JavaWebApp" */;
 			buildPhases = (
+				17B1DAEA60FC0B55D6A67774 /* Check Pods Manifest.lock */,
 				923F26741D9278C900B27D8B /* Sources */,
 				923F26751D9278C900B27D8B /* Frameworks */,
 				923F26761D9278C900B27D8B /* Resources */,
+				BA1FE2DE3FF3B8799A5B7D87 /* Embed Pods Frameworks */,
+				BC004405B762068725BCEDF0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +124,7 @@
 					923F26771D9278C900B27D8B = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = YUQB2X8V9P;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +159,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17B1DAEA60FC0B55D6A67774 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA1FE2DE3FF3B8799A5B7D87 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JavaWebApp/Pods-JavaWebApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC004405B762068725BCEDF0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JavaWebApp/Pods-JavaWebApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		923F26741D9278C900B27D8B /* Sources */ = {
@@ -257,6 +333,7 @@
 		};
 		923F268B1D9278C900B27D8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37A9B32E8DB3E66DBE08DDE6 /* Pods-JavaWebApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YUQB2X8V9P;
@@ -270,6 +347,7 @@
 		};
 		923F268C1D9278C900B27D8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F0C5B0B2F6698B277D9377F /* Pods-JavaWebApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YUQB2X8V9P;
@@ -300,6 +378,7 @@
 				923F268C1D9278C900B27D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
