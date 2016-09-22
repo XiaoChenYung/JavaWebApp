@@ -18,11 +18,13 @@ class ViewController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        Alamofire.request("http://192.168.11.184:8080/admin/users").responseJSON { (response) in
+        Alamofire.request("http://192.168.11.184:8080/admin/users",method:.post,parameters:["nickname":"sdfasd","firstName":"sdfasd","lastName":"sdfasd","password":"sdfasd"]).responseJSON { (response) in
             if let JSON = response.result.value {
                 print("JSON: \(JSON)")
             }
         }
+        
+//        Alamofire.reque
     }
     
     override func didReceiveMemoryWarning() {
