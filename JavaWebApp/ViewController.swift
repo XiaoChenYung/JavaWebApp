@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        Alamofire.request("http://192.168.11.184:8080/admin/users",method:.post,parameters:["nickname":"sdfasd","firstName":"sdfasd","lastName":"sdfasd","password":"sdfasd"]).responseJSON { (response) in
+        Alamofire.request("http://192.168.11.184:8080/admin/users",method:.post,parameters:["nickname":"哥哥","firstName":"哇哈哈","lastName":"地雷","password":"圣诞节复活节阿斯"]).responseJSON { (response) in
             if let JSON = response.result.value {
                 print("JSON: \(JSON)")
             }
