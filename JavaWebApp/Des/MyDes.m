@@ -21,7 +21,7 @@
 + (NSString *) decode:(NSString *)str key:(NSString *)key
 {
     NSMutableString *str1 = [NSMutableString stringWithString:str];
-//    [MyDes reformatSpecialCharacters:str1];
+    [MyDes reformatSpecialCharacters:str1];
     NSString *rt = [MyDes doCipher:str1 key:key context:kCCDecrypt];
     return rt;
 }
