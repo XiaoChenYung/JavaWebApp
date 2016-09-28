@@ -12,6 +12,7 @@
 		923F26811D9278C900B27D8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923F267F1D9278C900B27D8B /* Main.storyboard */; };
 		923F26831D9278C900B27D8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923F26821D9278C900B27D8B /* Assets.xcassets */; };
 		923F26861D9278C900B27D8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923F26841D9278C900B27D8B /* LaunchScreen.storyboard */; };
+		9240D6821D9B6BA800F57A54 /* MyDes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9240D6811D9B6BA800F57A54 /* MyDes.m */; };
 		FAF23FDFFD7EAF704B96E74E /* Pods_JavaWebApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12FD701A46B7B79848A47BD0 /* Pods_JavaWebApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,9 @@
 		923F26821D9278C900B27D8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		923F26851D9278C900B27D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		923F26871D9278C900B27D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9240D67F1D9B6BA700F57A54 /* JavaWebApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JavaWebApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		9240D6801D9B6BA800F57A54 /* MyDes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDes.h; sourceTree = "<group>"; };
+		9240D6811D9B6BA800F57A54 /* MyDes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDes.m; sourceTree = "<group>"; };
 		9F0C5B0B2F6698B277D9377F /* Pods-JavaWebApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaWebApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JavaWebApp/Pods-JavaWebApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +74,7 @@
 		923F267A1D9278C900B27D8B /* JavaWebApp */ = {
 			isa = PBXGroup;
 			children = (
+				9240D67E1D9B6B7D00F57A54 /* Des */,
 				923F267B1D9278C900B27D8B /* AppDelegate.swift */,
 				923F267D1D9278C900B27D8B /* ViewController.swift */,
 				923F267F1D9278C900B27D8B /* Main.storyboard */,
@@ -78,6 +83,16 @@
 				923F26871D9278C900B27D8B /* Info.plist */,
 			);
 			path = JavaWebApp;
+			sourceTree = "<group>";
+		};
+		9240D67E1D9B6B7D00F57A54 /* Des */ = {
+			isa = PBXGroup;
+			children = (
+				9240D6801D9B6BA800F57A54 /* MyDes.h */,
+				9240D6811D9B6BA800F57A54 /* MyDes.m */,
+				9240D67F1D9B6BA700F57A54 /* JavaWebApp-Bridging-Header.h */,
+			);
+			path = Des;
 			sourceTree = "<group>";
 		};
 		FBBE383EBFC67F6BFD062DA3 /* Frameworks */ = {
@@ -213,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9240D6821D9B6BA800F57A54 /* MyDes.m in Sources */,
 				923F267E1D9278C900B27D8B /* ViewController.swift in Sources */,
 				923F267C1D9278C900B27D8B /* AppDelegate.swift in Sources */,
 			);
@@ -339,11 +355,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YUQB2X8V9P;
 				INFOPLIST_FILE = JavaWebApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.touchmedia.JavaWebApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JavaWebApp/Des/JavaWebApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -354,11 +373,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YUQB2X8V9P;
 				INFOPLIST_FILE = JavaWebApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.touchmedia.JavaWebApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JavaWebApp/Des/JavaWebApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
