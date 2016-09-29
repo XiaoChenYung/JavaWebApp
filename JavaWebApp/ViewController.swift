@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let sss = MyDes.decode("U2FsdGVkX19EB95vEaWJ5o/aqTPyCHsnVwJegFWs0WqX1dPucVQmTw==", key: "asdfaasfsdfqwfeasdfsd")
+        let sss = MyDes.decode("D9788155D80EDBC3", key: "asdfaasfsdfqwfeasdfsd")
         print(sss)
         // Do any additional setup after loading the view, typically from a nib.
     }
