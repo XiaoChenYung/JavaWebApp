@@ -12,7 +12,7 @@
 		923F26811D9278C900B27D8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923F267F1D9278C900B27D8B /* Main.storyboard */; };
 		923F26831D9278C900B27D8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923F26821D9278C900B27D8B /* Assets.xcassets */; };
 		923F26861D9278C900B27D8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923F26841D9278C900B27D8B /* LaunchScreen.storyboard */; };
-		9240D6821D9B6BA800F57A54 /* MyDes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9240D6811D9B6BA800F57A54 /* MyDes.m */; };
+		92565AE81D9CFAD800B9E612 /* MyDes.m in Sources */ = {isa = PBXBuildFile; fileRef = 92565AE71D9CFAD800B9E612 /* MyDes.m */; };
 		FAF23FDFFD7EAF704B96E74E /* Pods_JavaWebApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12FD701A46B7B79848A47BD0 /* Pods_JavaWebApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +27,8 @@
 		923F26851D9278C900B27D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		923F26871D9278C900B27D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9240D67F1D9B6BA700F57A54 /* JavaWebApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JavaWebApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		9240D6801D9B6BA800F57A54 /* MyDes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDes.h; sourceTree = "<group>"; };
-		9240D6811D9B6BA800F57A54 /* MyDes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDes.m; sourceTree = "<group>"; };
+		92565AE61D9CFAD800B9E612 /* MyDes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDes.h; sourceTree = "<group>"; };
+		92565AE71D9CFAD800B9E612 /* MyDes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDes.m; sourceTree = "<group>"; };
 		9F0C5B0B2F6698B277D9377F /* Pods-JavaWebApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaWebApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JavaWebApp/Pods-JavaWebApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,8 +88,8 @@
 		9240D67E1D9B6B7D00F57A54 /* Des */ = {
 			isa = PBXGroup;
 			children = (
-				9240D6801D9B6BA800F57A54 /* MyDes.h */,
-				9240D6811D9B6BA800F57A54 /* MyDes.m */,
+				92565AE61D9CFAD800B9E612 /* MyDes.h */,
+				92565AE71D9CFAD800B9E612 /* MyDes.m */,
 				9240D67F1D9B6BA700F57A54 /* JavaWebApp-Bridging-Header.h */,
 			);
 			path = Des;
@@ -228,7 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9240D6821D9B6BA800F57A54 /* MyDes.m in Sources */,
+				92565AE81D9CFAD800B9E612 /* MyDes.m in Sources */,
 				923F267E1D9278C900B27D8B /* ViewController.swift in Sources */,
 				923F267C1D9278C900B27D8B /* AppDelegate.swift in Sources */,
 			);
