@@ -14,5 +14,5 @@
 
 + (NSString *) encode:(NSString *)str key:(NSString *)key;
 + (NSString *) decode:(NSString *)str key:(NSString *)key;
-
++(NSString *)decryptWithDESString:(NSString *)sText key:(NSString *)key andiV:(NSString *)iv;
 @end
