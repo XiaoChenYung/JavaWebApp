@@ -266,7 +266,7 @@
     uint8_t *bufferPtr1 = NULL;
     size_t bufferPtrSize1 = 0;
     size_t movedBytes1 = 0;
-    //uint8_t iv[kCCBlockSizeDES];
+//    uint8_t iv[kCCBlockSizeDES];
     //memset((void *) iv, 0x0, (size_t) sizeof(iv));
     //    Byte iv[] = {0x12, 0x34, 0x56, 0x78, 0x90, 0xAB, 0xCD, 0xEF};
     bufferPtrSize1 = ([sTextIn length] + kCCKeySizeDES) & ~(kCCKeySizeDES -1);
